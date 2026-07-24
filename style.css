@@ -1,0 +1,17 @@
+        header{
+            background-color: #4D110A;
+            color: #E6AF00;
+            text-align: center;
+            max-width: 800px;
+            margin: 0   auto;
+            border: 5px solid #cf1010;
+            padding: 16px;
+        }
+        main{
+            background-color: white;
+            color: black;
+        }
+        img{
+            height: 200px;
+            
+        }
