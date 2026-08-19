@@ -23,17 +23,18 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            flex-direction: column;
+            flex-direction:row;
             padding: 16px;
             margin: 16px;
             gap: 16px;
             border: 1px solid #183C63;
-             flex: 1 1 25%;
+             flex: 1 1 100%;
         }
 
         img {
             width: 80px;
             height: 80px;
+            align-self: baseline;
         }
 
         .artigo-autor {
