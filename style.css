@@ -5,6 +5,7 @@
           --cor-texto: #151428;
           --cor-contraste: #f3eef7;
           --cor-botao: #f9f9f9;
+          --cor-destaque: rgba(255, 153, 0, 0.963);
           --fonte-texto: 'Segoe UI', sans-serif
       }
 
@@ -50,7 +51,7 @@
           padding: 16px;
           margin: 16px;
           gap: 16px;
-          border: 1px solid #183C63;
+          border: 1px solid var(--cor-destaque);
           flex: 1 1 100%;
       }
 
@@ -78,4 +79,16 @@
 
 .tema-escuro header p {
     color: var(--cor-contraste);
+}
+
+.btn-tema-escuro {
+    position: fixed;
+    bottom: 16px; /* Distância da borda de baixo */
+    right: 16px;  /* Distância da borda da direita */
+    font-size: 32px; /* Tamanho do emoji */
+    padding: 12px;   /* Espaço interno entre o emoji e a borda */
+    background-color: var(--cor-primaria); /* Cor de fundo usando nossa variável */
+    border-radius: 50%; /* Deixa o botão perfeitamente redondo */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Muda o mouse para a "mãozinha" ao passar por cima */
 }
