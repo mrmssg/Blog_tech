@@ -73,17 +73,12 @@
     color: var(--cor-texto);
 }
 
-.tema-escuro p {
-    color: var(--cor-texto);
-}
 
-.tema-escuro header p {
+.tema-escuro header p h1 {
     color: var(--cor-texto);
     
 }
-.tema-escuro header{
-    color: var(--cor-texto);
-}
+
 
 .btn-tema-escuro {
     position: fixed;
