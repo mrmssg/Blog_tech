@@ -78,9 +78,11 @@
 }
 
 .tema-escuro header p {
-    background-color: var(--cor-fundo);
     color: var(--cor-texto);
     
+}
+.tema-escuro header{
+    color: var(--cor-texto);
 }
 
 .btn-tema-escuro {
