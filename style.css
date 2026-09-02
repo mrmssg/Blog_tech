@@ -91,3 +91,8 @@
     border: none; /* Remove a borda padrão do botão */
     cursor: pointer; /* Muda o mouse para a "mãozinha" ao passar por cima */
 }
+
+ul{
+    text-align: left;
+    justify-content: left;
+}
