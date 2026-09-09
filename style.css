@@ -74,15 +74,30 @@
 }
 
 
-.tema-escuro header p h1 {
-    color: var(--cor-texto);
-    
+.tema-escuro header {
+    color: var(--cor-fundo);
 }
 
+.tema-escuro .header__texto{
+    color: var(--cor-fundo);
+    
+}
 
 .btn-tema-escuro {
     position: fixed;
     bottom: 16px; /* Distância da borda de baixo */
+    right: 16px;  /* Distância da borda da direita */
+    font-size: 32px; /* Tamanho do emoji */
+    padding: 12px;   /* Espaço interno entre o emoji e a borda */
+    background-color: var(--cor-primaria); /* Cor de fundo usando nossa variável */
+    border-radius: 50%; /* Deixa o botão perfeitamente redondo */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Muda o mouse para a "mãozinha" ao passar por cima */
+}
+
+.btn-topo {
+    position: fixed;
+    bottom: 80px; /* Distância da borda de baixo */
     right: 16px;  /* Distância da borda da direita */
     font-size: 32px; /* Tamanho do emoji */
     padding: 12px;   /* Espaço interno entre o emoji e a borda */
