@@ -1,21 +1,36 @@
-const botoes = document.querySelectorAll("button");
+//const botoes = document.querySelectorAll("button");
 const btnTemaEscuro = document.querySelector(".btn-tema-escuro");
 
-    botoes.forEach(function (botao) {
-        let curtiu = false;
-        botao.addEventListener("click", botaoClicado);
-        function botaoClicado() {
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
-            if (curtiu === false){
-                texto.textContent++;
-                curtiu = true;
-            } else{
-                texto.textContent--;
-                curtiu = false;
-            }
-        }
-    })
+// Seleciona todos os botões com a classe 'btn-reaction'
+  const botões = document.querySelectorAll('.btn-reaction');
+
+  // Adiciona o evento de clique a cada um deles
+  botões.forEach(botão => {
+    botão.addEventListener('click', () => {
+      // Encontra o elemento <span> dentro do botão clicado
+      const spanContador = botão.querySelector('span');
+      
+      // Pega o número atual do span, converte para número e soma 1
+      let valorAtual = parseInt(spanContador.textContent, 10);
+      spanContador.textContent = valorAtual + 1;
+    });
+  });
+
+   // botoes.forEach(function (botao) {
+    //    let curtiu = false;
+    //    botao.addEventListener("click", botaoClicado);
+     //   function botaoClicado() {
+      //      console.log("fui clicado");
+     //       let texto = botao.querySelector("span");
+     //       if (curtiu === false){
+     //           texto.textContent++;
+     //           curtiu = true;
+     //       } else{
+     //           texto.textContent--;
+     //           curtiu = false;
+     //       }
+     //   }
+   // })
 btnTemaEscuro.addEventListener("click", mudaTema);
 function mudaTema() {
     const corpoPagina = document.body;
