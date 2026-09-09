@@ -51,7 +51,9 @@
           padding: 16px;
           margin: 16px;
           gap: 16px;
-          border: 1px solid var(--cor-destaque);
+          /* x-offset | y-offset | blur-radius | color (com transparência) */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+          /*border: 1px solid var(--cor-destaque); */
           flex: 1 1 100%;
       }
 
@@ -95,7 +97,17 @@
     cursor: pointer; /* Muda o mouse para a "mãozinha" ao passar por cima */
 }
 
-.btn-topo {
+.tema-escuro .btn-tema-escuro {
+    background-color: var(--cor-secundaria);
+}
+
+/* O asterisco aplica a regra a todos os elementos do site */
+* {
+    transition: background-color 0.3s ease;
+}
+
+
+#btnTopo {
     position: fixed;
     bottom: 80px; /* Distância da borda de baixo */
     right: 16px;  /* Distância da borda da direita */
@@ -107,6 +119,9 @@
     cursor: pointer; /* Muda o mouse para a "mãozinha" ao passar por cima */
 }
 
+#btnTopo:hover {
+  background-color: #42c146;
+}
 ul{
     text-align: left;
     justify-content: left;

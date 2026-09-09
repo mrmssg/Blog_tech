@@ -27,3 +27,18 @@ function mudaTema() {
     }
 }
 
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 300) {
+    btnTopo.style.display = "block";
+  } else {
+    btnTopo.style.display = "none";
+  }
+});
+
+// Retorna ao topo com animação suave ao clicar
+btnTopo.addEdgeListener = btnTopo.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
